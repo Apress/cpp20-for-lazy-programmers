@@ -1,0 +1,4 @@
+The lists example in the text ("lists" folder) has some functions taken out to be left as exercises. 
+So running it is not a good test of anything -- until those functions are written.
+
+listsSolution, which will not be provided in the repository, is the working version.

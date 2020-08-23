@@ -1,0 +1,25 @@
+To create a project that works with the SSDL library:
+
+Copy the basicSSDLProject folder in the newWork subfolder and rename it appropriately. 
+*Keep it in this newWork folder so the relative paths to the include and library directories still work.* 
+Go into your new folder.
+
+Then,
+
+With MinGW:  
+Copy Makefile.mingw to Makefile, and type make.
+To run, type bash mingw
+
+In Unix:
+Copy Makefile.unix to Makefile, and type make.
+To run, type ./runx
+
+With Microsoft Visual Studio:
+Open SSDL_Project.sln, build, and run.
+
+
+
+
+
+
+

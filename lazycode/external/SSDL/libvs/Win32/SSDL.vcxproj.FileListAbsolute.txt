@@ -1,0 +1,1 @@
+C:\Users\briggs_w\Desktop\lazycode\external\SSDL\libvs\Win32\SSDL_Debug.lib

@@ -1,0 +1,28 @@
+//Program to draw a cartoonish bug's head on the screen
+//      using calculations
+//      -- from _C++ for Lazy Programmers_
+
+#include "SSDL.h"
+
+int main (int argc, char** argv)
+{
+    //draw the bug's head              
+    SSDL_RenderDrawCircle (430, 260, 200);   
+
+    //left eye, and right
+    SSDL_RenderDrawCircle (430-80, 260, 50);
+    SSDL_RenderDrawCircle (430+80, 260, 50);   
+
+    SSDL_RenderDrawLine   (360, 140, 280,  40);//left antenna
+    SSDL_RenderDrawLine   (280,  40, 210,  90);
+
+    SSDL_RenderDrawLine   (520, 140, 560,  40);//right antenna
+    SSDL_RenderDrawLine   (560,  40, 620,  80);
+
+    SSDL_RenderDrawLine   (290, 350, 372, 410);//the smile
+    SSDL_RenderDrawLine   (372, 410, 490, 400);
+
+    SSDL_WaitKey ();                           //Wait for user to hit a key
+
+    return 0;
+}

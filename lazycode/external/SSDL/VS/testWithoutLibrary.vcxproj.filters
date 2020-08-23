@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\SSDL_color.cpp" />
+    <ClCompile Include="..\src\SSDL_display.cpp" />
+    <ClCompile Include="..\src\SSDL_draw.cpp" />
+    <ClCompile Include="..\src\SSDL_exception.cpp" />
+    <ClCompile Include="..\src\SSDL_font.cpp" />
+    <ClCompile Include="..\src\SSDL_io.cpp" />
+    <ClCompile Include="..\src\SSDL_sound.cpp" />
+    <ClCompile Include="..\src\SSDL_stream.cpp" />
+    <ClCompile Include="..\src\SSDL_timer.cpp" />
+    <ClCompile Include="..\src\SSDL_image.cpp" />
+    <ClCompile Include="..\src\SSDL_singletonManager.cpp" />
+    <ClCompile Include="..\src\SSDL_sprite.cpp" />
+    <ClCompile Include="..\test\testSSDL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{3c1b3060-1d3b-4510-8eaa-f302cdd658c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\ssdl.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_color.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_display.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_draw.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_exception.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_font.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_image.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_io.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_timer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_stream.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_sprite.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_sound.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_wrap.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SSDL_singletonManager.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

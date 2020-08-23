@@ -1,0 +1,4 @@
+#Run this on Unix systems if you haven't put libssdl.so in an appropriate path yet
+export LD_LIBRARY_PATH=../../external/SSDL/unix
+./a.out
+

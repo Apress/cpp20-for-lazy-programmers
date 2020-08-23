@@ -1,0 +1,5 @@
+This is file2.txt.
+It contains several lines,
+Like this one,
+And this.
+Only two lines differ from those of file1.txt.

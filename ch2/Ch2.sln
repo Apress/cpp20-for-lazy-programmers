@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "beach", "beach\beach.vcxproj", "{A17BA0BE-FD84-4DCB-85EF-621CF3E9AC91}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "flamingo", "flamingo\flamingo.vcxproj", "{FF554D0C-CAFE-4F89-8942-D623E8A0E08F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pupdog", "pupdog\pupdog.vcxproj", "{59B1A31C-5151-4E1A-BED0-59430ADFECF5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sound", "sound\sound.vcxproj", "{9AEB5CA8-0A29-41F0-BF60-D2A5E050A559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A17BA0BE-FD84-4DCB-85EF-621CF3E9AC91}.Debug|x86.ActiveCfg = Debug|Win32
+		{A17BA0BE-FD84-4DCB-85EF-621CF3E9AC91}.Debug|x86.Build.0 = Debug|Win32
+		{A17BA0BE-FD84-4DCB-85EF-621CF3E9AC91}.Release|x86.ActiveCfg = Release|Win32
+		{A17BA0BE-FD84-4DCB-85EF-621CF3E9AC91}.Release|x86.Build.0 = Release|Win32
+		{FF554D0C-CAFE-4F89-8942-D623E8A0E08F}.Debug|x86.ActiveCfg = Debug|Win32
+		{FF554D0C-CAFE-4F89-8942-D623E8A0E08F}.Debug|x86.Build.0 = Debug|Win32
+		{FF554D0C-CAFE-4F89-8942-D623E8A0E08F}.Release|x86.ActiveCfg = Release|Win32
+		{FF554D0C-CAFE-4F89-8942-D623E8A0E08F}.Release|x86.Build.0 = Release|Win32
+		{59B1A31C-5151-4E1A-BED0-59430ADFECF5}.Debug|x86.ActiveCfg = Debug|Win32
+		{59B1A31C-5151-4E1A-BED0-59430ADFECF5}.Debug|x86.Build.0 = Debug|Win32
+		{59B1A31C-5151-4E1A-BED0-59430ADFECF5}.Release|x86.ActiveCfg = Release|Win32
+		{59B1A31C-5151-4E1A-BED0-59430ADFECF5}.Release|x86.Build.0 = Release|Win32
+		{9AEB5CA8-0A29-41F0-BF60-D2A5E050A559}.Debug|x86.ActiveCfg = Debug|Win32
+		{9AEB5CA8-0A29-41F0-BF60-D2A5E050A559}.Debug|x86.Build.0 = Debug|Win32
+		{9AEB5CA8-0A29-41F0-BF60-D2A5E050A559}.Release|x86.ActiveCfg = Release|Win32
+		{9AEB5CA8-0A29-41F0-BF60-D2A5E050A559}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FC4812E-434F-4A59-844C-B35317734F22}
+	EndGlobalSection
+EndGlobal

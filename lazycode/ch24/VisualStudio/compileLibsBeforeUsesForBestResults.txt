@@ -1,0 +1,1 @@
+If you compile a program that *uses* a library before the library (!), that obviously won't work...so compile the cardLib you want first, then the program to use it.
