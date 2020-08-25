@@ -1,1 +1,0 @@
-g++ doesn't support modules yet; this project is for Visual Studio only (for now).

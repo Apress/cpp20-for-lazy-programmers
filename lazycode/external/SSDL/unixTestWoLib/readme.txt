@@ -1,1 +1,0 @@
-This directory is for testing the code, in Unix, without building a library. Useful only for developers of the library.

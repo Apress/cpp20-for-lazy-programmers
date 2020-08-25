@@ -1,3 +1,0 @@
-#Run this on MinGW systems if .dll's SDL2 needs aren't in the PATH
-PATH="../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/bin:../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/bin:../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/bin:../../external/SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/bin:$PATH"
-gdb a.out

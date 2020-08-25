@@ -1,1 +1,0 @@
-generator doesn't work with g++ -- so there's no Makefile; Visual Studio only on this one (for now).
