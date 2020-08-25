@@ -1,0 +1,18 @@
+Either make copies of basicSSDLProject and basicStandardProject and use them; or, if you'd rather start from scratch,
+
+g++
+
+Add this g++ option to your build commands:      -std=gnu++2a
+To use the {fmt} library, add this include flag: -I../../external/fmt-master/include
+  ...and see the first few lines of ch25/2-format to see how to include
+
+Visual Studio:
+
+Make a Console Project.
+Under Project Properites > Configuration Properties > C/C++ > Language, set
+  C++ Language Standard to Preview - Features from the Latest C++ Working Draft (/std:c++latest)
+  Enable C++ Modules (experimental) to Yes (/experimental:module)
+To use the {fmt} library set Project Properites > Configuration Properties > C/C++ > Additional include directories to ../../external/fmt-master/include
+  ...and see the first few lines of ch25/2-format to see how to include
+
+
