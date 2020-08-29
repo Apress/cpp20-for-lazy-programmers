@@ -1,0 +1,16 @@
+# Makefile for a program with multiple .cpp files
+#  -- from _C++ for Lazy Programmers_, but I claim no copyright
+
+PROG	= myprogram             # What program am I building?
+SRCS	= $(wildcard *.cpp)     # What .cpp files do I have?
+OBJS	= ${SRCS:.cpp=.o}       # What .o   files do I build?
+
+$(PROG): $(OBJS)                # Build the program
+	g++ -std=gnu++2a -g -o $@ $^
+
+%.o: 	%.cpp                   # Make the .o files
+	g++ -std=gnu++2a -g -o $@ -c $<
+
+clean:                          # Clean up files
+	rm -f $(PROG)               
+	rm -f *.o

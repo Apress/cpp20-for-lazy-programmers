@@ -1,0 +1,4 @@
+#Run this on Unix systems if the .so file isn't in the library path
+export LD_LIBRARY_PATH=../cardLibg++
+./montana
+

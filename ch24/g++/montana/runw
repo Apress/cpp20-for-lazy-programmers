@@ -1,0 +1,3 @@
+#Run this on MinGW systems if needed .dll isn't on the path
+PATH="../cardLibg++:$PATH"
+montana
