@@ -1,0 +1,14 @@
+﻿  SSDL_color.cpp
+  SSDL_display.cpp
+  SSDL_draw.cpp
+  SSDL_exception.cpp
+  SSDL_font.cpp
+  SSDL_image.cpp
+  SSDL_io.cpp
+  SSDL_singletonManager.cpp
+  SSDL_sound.cpp
+  SSDL_sprite.cpp
+  SSDL_stream.cpp
+  SSDL_timer.cpp
+  Generating Code...
+  SSDL.vcxproj -> C:\Users\briggs_w\Desktop\lazycode\external\SSDL\VS\..\libvs\x64\SSDL_Debug.lib
