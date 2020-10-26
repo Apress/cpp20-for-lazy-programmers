@@ -9,14 +9,14 @@ int main (int argc, char** argv)
 {
     SSDL_SetWindowTitle ("Hit any key to exit.");
 
-    const int CENTER_X = SSDL_GetWindowWidth ();
-    const int CENTER_Y = SSDL_GetWindowHeight();
+    const int CENTER_X = SSDL_GetWindowWidth ()/2;
+    const int CENTER_Y = SSDL_GetWindowHeight()/2;
 
     double radius = 200.0;  // start radius at 200
     do
     {
         // draw a circle at center of screen, with this radius
-        SSDL_RenderDrawCircle (CENTER_X/2, CENTER_Y/2, int (radius)); 
+        SSDL_RenderDrawCircle (CENTER_X, CENTER_Y, int (radius)); 
 	
         radius /= sqrt (2);	// divide radius by √2
     }
