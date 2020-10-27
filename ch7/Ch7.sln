@@ -9,7 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4-globalVars", "4-globalVar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5-comic", "5-comic\5-comic.vcxproj", "{C4DB15C8-1B73-4879-9284-57D2FFF06706}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2,3-drawCross", "2-3-drawCross\2,3-drawCross.vcxproj", "{6A0CDE34-2F54-48BE-A69C-C5A9E21F9D03}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-drawCross", "2-drawCross\2-drawCross.vcxproj", "{6A0CDE34-2F54-48BE-A69C-C5A9E21F9D03}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3-drawCrosses", "3-drawCrosses\3-drawCrosses.vcxproj", "{CC92A178-375B-49CF-822C-20A1F1108845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6A0CDE34-2F54-48BE-A69C-C5A9E21F9D03}.Debug|x86.Build.0 = Debug|Win32
 		{6A0CDE34-2F54-48BE-A69C-C5A9E21F9D03}.Release|x86.ActiveCfg = Release|Win32
 		{6A0CDE34-2F54-48BE-A69C-C5A9E21F9D03}.Release|x86.Build.0 = Release|Win32
+		{CC92A178-375B-49CF-822C-20A1F1108845}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC92A178-375B-49CF-822C-20A1F1108845}.Debug|x86.Build.0 = Debug|Win32
+		{CC92A178-375B-49CF-822C-20A1F1108845}.Release|x86.ActiveCfg = Release|Win32
+		{CC92A178-375B-49CF-822C-20A1F1108845}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
