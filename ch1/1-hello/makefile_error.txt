@@ -1,0 +1,29 @@
+2020 dec 30
+
+Hi Mr Briggs,
+tried to follow Your book instructions to build 1-hello.cpp with Makefile,
+but I get following error (<Cannot find the specified file>)
+
+D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>copy Makefile.mingw Makefile
+	        1 file copiati.
+
+D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>make
+	process_begin: CreateProcess(NULL, # echo "ALL_FLAGS :" -I../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/include/SDL2 -I../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/include/SDL2 -I../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/include/SDL2 -I../../external/SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/include/SDL2 -I../../external/SSDL/include -I../../external/fmt-master/include -std=gnu++2a -lmingw32 -lssdl -lSDL2main -lSDL2 -lSDL2_image -lSDL2_TTF -lSDL2_Mixer -L../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/lib -L../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/lib -L../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/lib -L../../external/SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/lib -L../../external/SSDL/mingw, ...) failed.
+make (e=2): Impossibile trovare il file specificato.
+	make: *** [Makefile:52: a.out] Error 2
+
+D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>
+
+
+Tried to fix Makefile without success:
+	for example I changed all '/' to '\', but same error.
+	D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>vim makefile_error.txt                                                                                                                                           D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>vim Makefile
+D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>make
+	process_begin: CreateProcess(NULL, # echo "ALL_FLAGS :" -I..\..\external\SDL2-MinGW\SDL2\i686-w64-mingw32\include\SDL2 -I..\..\external\SDL2-MinGW\SDL2_image\i686-w64-mingw32\include\SDL2 -I..\..\external\SDL2-MinGW\SDL2_mixer\i686-w64-mingw32\include\SDL2 -I..\..\external\SDL2-MinGW\SDL2_ttf\i686-w64-mingw32\include\SDL2 -I..\..\external\SSDL\include -I..\..\external\fmt-master\include -std=gnu++2a -lmingw32 -lssdl -lSDL2main -lSDL2 -lSDL2_image -lSDL2_TTF -lSDL2_Mixer -L..\..\external\SDL2-MinGW\SDL2\i686-w64-mingw32\lib -L..\..\external\SDL2-MinGW\SDL2_image\i686-w64-mingw32\lib -L..\..\external\SDL2-MinGW\SDL2_mixer\i686-w64-mingw32\lib -L..\..\external\SDL2-MinGW\SDL2_ttf\i686-w64-mingw32\lib -L..\..\external\SSDL\mingw, ...) failed.
+make (e=2): Impossibile trovare il file specificato.
+	make: *** [Makefile:52: a.out] Error 2
+
+D:\c++_prog\LazyC++20\cpp20-for-lazy-programmers\ch1\1-hello>
+
+
+Thank YOu for a solution.
