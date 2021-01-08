@@ -91,7 +91,6 @@ int main()
     // & would work here too -- but &LA is a little more secure
     ranges::sort (cities, [&LA](const City& a, const City& b)
                           {
-        LA.p
                               return distance (LA, a) < distance (LA, b);
                           });
     for (const auto& i : cities) cout << i.name() << " / "; 
