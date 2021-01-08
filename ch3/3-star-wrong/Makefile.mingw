@@ -13,7 +13,7 @@ CPP_OBJECTS		= ${CPP_SOURCES:   .cpp=.o}
 CC_OBJECTS		= ${CC_SOURCES:	.cc =.o}
 ALL_OBJECTS		= $(notdir $(C_OBJECTS) $(CPP_OBJECTS) $(CC_OBJECTS))
 
-											#Tell g++ where to find include files for SDL2, SSDL
+#		Tell g++ where to find include files for SDL2, SSDL
 INCLUDES		= 	../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/include/SDL2		\
 					../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/include/SDL2	\
 					../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/include/SDL2	\
@@ -24,14 +24,14 @@ INCLUDES		= 	../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/include/SDL2		\
 INCLUDE_FLAGS   = $(foreach dir,    $(INCLUDES),     -I$(dir))
 
 LANGUAGE_FLAGS  = -std=gnu++2a	            #Specify language standard: C++20
-                                            #MinGW can't do the fmt library
-                                            # unless we specify gnu++ to add gnu
-                                            # extensions, so I'll just use it throughout.
+#											MinGW can't do the fmt library
+# 											unless we specify gnu++ to add gnu
+# 											extensions, so I'll just use it throughout.
 
-								#Tell g++ where to find library files for SDL2, SSDL
-#Sometimes library order matters.  If this is a problem
-# in the future -- if it says it can't find something that's in one of the 
-# listed libraries -- try putting libraries in different order 
+#		Tell g++ where to find library files for SDL2, SSDL
+#		Sometimes library order matters.  If this is a problem
+#		 in the future -- if it says it can't find something that's in one of the 
+#		 listed libraries -- try putting libraries in different order 
 
 LIBRARIES		:= mingw32 ssdl SDL2main SDL2 SDL2_image SDL2_TTF SDL2_Mixer 
 LIBRARY_DIRS	:=  ../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/lib 		\
@@ -49,11 +49,11 @@ ALL_FLAGS   	:= $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $(LIB_FLAGS) $(LIB_DIR_FLAGS)
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(ALL_OBJECTS)
-	@# echo 'ALL_FLAGS :' $(ALL_FLAGS)
+#	echo 'ALL_FLAGS :' $(ALL_FLAGS)
 	g++ -o $@ $^ -g $(ALL_FLAGS) 
-#	@ # -g means: 	 support debugging
-#	@ # $^ means:  	 use all the objects
-#	@ # -o $@ means: let the output be called $(EXECUTABLE)
+#	-g means: 	 support debugging
+#	$^ means:  	 use all the objects
+#	-o $@ means: let the output be called $(EXECUTABLE)
 
 clean:
 	rm -f $(EXECUTABLE)

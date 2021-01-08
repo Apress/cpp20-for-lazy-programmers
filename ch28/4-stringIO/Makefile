@@ -21,9 +21,9 @@ all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(ALL_OBJECTS)
 		g++ -o $@ -g $^
-		@ # -g means: 	 support debugging
-		@ # $^ means:  	 use all the objects
-		@ # -o $@ means: let the output be called $(EXECUTABLE)
+#		    -g means: 	 support debugging
+#		    $^ means:  	 use all the objects
+#		    -o $@ means: let the output be called $(EXECUTABLE)
 
 clean:
 		rm -f $(EXECUTABLE)
@@ -37,7 +37,7 @@ clean:
 
 %.o: 	%.cpp
 		g++ -g -o $@ -c $<
-		@ # $< means "the next object right of the : (a .cpp file)"
+#		    $< means "the next object right of the : (a .cpp file)"
 
 %.o: 	%.cc
 		g++ -g -o $@ -c $<
@@ -47,11 +47,11 @@ clean:
 
 %.dep: 	%.cpp 
 		g++ -MM -MT "$*.o $@" $< > $@
-		@ # -MM means:	let output be a dependency rule listing headers
-		@ # -MT means:	the left side of the rule (see below) is
-		@ #				the pattern specified
-		@ #				not system headers, just ours
-		@ # > $@     	puts output in the .dep file
+#		    -MM means:	let output be a dependency rule listing headers
+#		    -MT means:	the left side of the rule (see below) is
+#		   				the pattern specified
+#		   				not system headers, just ours
+#		    > $@     	puts output in the .dep file
 
 ################# Explanation: ############################
 #g++/gcc -MM produces a pattern like so:
@@ -74,10 +74,10 @@ clean:
 ifneq ($(MAKECMDGOALS),clean) # If not cleaning up...
 -include $(ALL_DEPENDENCIES)
 endif
-		#This says: include all those .dep files you made
-		#  as if they were part of the Makefile
-		#The - at the start says "don't gripe if none are found
-		#  (we'll be building them anyway)"
-		#...but only if it's not "make clean"
-		#  because we don't want to rebuild dep's just to erase them
+#		This says: include all those .dep files you made
+#		  as if they were part of the Makefile
+#		The - at the start says "don't gripe if none are found
+#		  (we'll be building them anyway)"
+#		...but only if it's not "make clean"
+#		  because we don't want to rebuild dep's just to erase them
 
