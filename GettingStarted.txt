@@ -2,11 +2,12 @@ To create your own programs with SSDL, see the newWork folder.
 
 ========== Installation of SSDL =================================
 
-SSDL is built into this repository -- unzip it and no further installation is needed.
+SSDL is built into this repository. No installation is needed.
 
 -========= Installation of SDL2 and other helper libraries===============
 
-In C++20 for Lazy Programmers, see Chapter 1 and Appendix A.
+Unix: In C++20 for Lazy Programmers, see Chapter 1 and Appendix A.
+Visual Studio and MinGW: No installation is needed.
 
 ========== How to use example SSDL programs ====================
 
