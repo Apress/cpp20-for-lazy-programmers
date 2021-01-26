@@ -1,0 +1,64 @@
+# A makefile that should work for any SSDL projects
+# Adapt as needed
+#  -- from the SDL (Simple SDL) library, but no copyright is claimed
+
+EXECUTABLE		= a.out					    #Yes, you can call it this and it should run, even in MinGW
+
+C_SOURCES		= $(wildcard *.c)			#We'll try to compile all .c, .cpp, and .cc files
+CPP_SOURCES		= $(wildcard *.cpp)
+CC_SOURCES		= $(wildcard *.cc)
+
+C_OBJECTS		= ${C_SOURCES:		.c  =.o}#Now we know what .o files we'll need to create
+CPP_OBJECTS		= ${CPP_SOURCES:   .cpp=.o}
+CC_OBJECTS		= ${CC_SOURCES:	.cc =.o}
+ALL_OBJECTS		= $(notdir $(C_OBJECTS) $(CPP_OBJECTS) $(CC_OBJECTS))
+
+#		Tell g++ where to find include files for SDL2, SSDL
+INCLUDES		= 	../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/include/SDL2		\
+					../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/include/SDL2	\
+					../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/include/SDL2	\
+					../../external/SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/include/SDL2	\
+					../../external/SSDL/include                                         \
+					../../external/fmt-master/include
+					
+INCLUDE_FLAGS   = $(foreach dir,    $(INCLUDES),     -I$(dir))
+
+LANGUAGE_FLAGS  = -std=gnu++2a	            #Specify language standard: C++20
+#											MinGW can't do the fmt library
+# 											unless we specify gnu++ to add gnu
+# 											extensions, so I'll just use it throughout.
+
+#		Tell g++ where to find library files for SDL2, SSDL
+#		Sometimes library order matters.  If this is a problem
+#		 in the future -- if it says it can't find something that's in one of the 
+#		 listed libraries -- try putting libraries in different order 
+
+LIBRARIES		:= mingw32 ssdl SDL2main SDL2 SDL2_image SDL2_TTF SDL2_Mixer 
+LIBRARY_DIRS	:=  ../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/lib 		\
+					../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/lib 	\
+					../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/lib 	\
+					../../external/SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/lib 	\
+					../../external/SSDL/mingw
+LIB_FLAGS		:= $(foreach library,$(LIBRARIES),    -l$(library))
+LIB_DIR_FLAGS   := $(foreach libdir, $(LIBRARY_DIRS), -L$(libdir))
+
+ALL_FLAGS   	:= $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $(LIB_FLAGS) $(LIB_DIR_FLAGS)
+
+##########################################################################
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(ALL_OBJECTS)
+#	echo 'ALL_FLAGS :' $(ALL_FLAGS)
+	g++ -o $@ $^ -g $(ALL_FLAGS) 
+#	-g means: 	 support debugging
+#	$^ means:  	 use all the objects
+#	-o $@ means: let the output be called $(EXECUTABLE)
+
+clean:
+	rm -f $(EXECUTABLE)
+	rm -f *.o
+	rm -f core
+	rm -f *.ncb *.sdf
+	rm -r -f Debug Release .vs Backup
+
