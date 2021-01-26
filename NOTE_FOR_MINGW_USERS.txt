@@ -1,6 +1,6 @@
-2021-01026: MinGW-W64 has changed somewhat and installation is no longer easy as it was described in Chapter 1.
+2021-01-26: MinGW-W64 has changed somewhat and installation is no longer easy as it was described in Chapter 1.
 
-If you already have MinGW and it is working (some older versions may have a compiler that's too old) and want to keep it, great.  If not, I recommend using MinGW through MSys. You'll need to install MSys and various helper libraries (SDL2). There is a walkthrough in this directory (MSYS_INSTALL_HELP.txt). It may go out of date eventually  -- I can't control that! -- but currently it works great, and changes are not likely to be significant for a while.
+If you already have MinGW and it is working (some older versions may have a compiler that's too old for C++20), and you want to keep it, great.  If not, I recommend using MinGW through MSys. You'll need to install MSys and various helper libraries (SDL2). There is a walkthrough in this directory (MSYS_INSTALL_HELP.txt). Currently it works great, and changes are not likely to be significant for a while.
 
 Contact me if you are having difficulty (see HOW_TO_CONTACT_AUTHOR.txt). 
 
