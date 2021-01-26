@@ -1,0 +1,3 @@
+#Run this on MinGW systems if you haven't put SDL-MinGW folders in appropriate places
+PATH="../../SDL2-MinGW/SDL2/i686-w64-mingw32/bin:../../SDL2-MinGW/SDL2_image/i686-w64-mingw32/bin:../../SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/bin:../../SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/bin:$PATH"
+./static-test.exe

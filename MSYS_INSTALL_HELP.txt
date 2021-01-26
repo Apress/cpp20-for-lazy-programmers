@@ -1,0 +1,34 @@
+HOW I INSTALLED MSYS (which includes MinGW and works with SSDL).
+
+
+1. Download the installer from msys2.org. Install it. Default settings are fine.
+
+2. Set the system path to include these two lines:
+C:\msys64\mingw64\bin
+C:\msys64\usr\bin
+(above any other lines that may include any other Unix-emulators like Cygwin or old MinGW versions).
+
+Now you can use the Windows command line when using MinGW.
+
+3. As msys2.org says, run these commands at the command line:
+
+pacman -Syu
+pacman -Su
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+
+4. To install SDL2,use this command (from https://gist.github.com/thales17/fb2e4cff60890a51d9dddd4c6e832ad2):
+
+pacman -S git mingw64/mingw-w64-x86_64-SDL2 mingw64/mingw-w64-x86_64-SDL2_mixer mingw64/mingw-w64-x86_64-SDL2_image mingw64/mingw-w64-x86_64-SDL2_ttf
+
+MSys2 should now be set up to support MinGW and SSDL.
+
+To build SSDL programs, enter
+copy Makefile.msys Makefile
+make
+
+To run SSDL programs, enter
+bash runw
+
+
+
+

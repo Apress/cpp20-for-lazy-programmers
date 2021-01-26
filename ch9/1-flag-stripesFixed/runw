@@ -1,3 +1,4 @@
-#Run this on MinGW systems if you haven't put SDL-MinGW folders in appropriate places
+#Run this on MinGW/MSys systems if you haven't put SDL-MinGW folders in appropriate places
+#MSys doesn't need the PATH extensions, but they won't hurt it
 PATH="../../external/SDL2-MinGW/SDL2/i686-w64-mingw32/bin:../../external/SDL2-MinGW/SDL2_image/i686-w64-mingw32/bin:../../external/SDL2-MinGW/SDL2_mixer/i686-w64-mingw32/bin:../../external/SDL2-MinGW/SDL2_ttf/i686-w64-mingw32/bin:$PATH"
-a.out
+./a.out
