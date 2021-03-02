@@ -5,7 +5,7 @@ This repository accompanies [*C++20 for Lazy Programmers*](https://www.apress.co
 [comment]: #cover
 ![Cover image](9781484263051.jpg)
 
-Download the files as a zip using the green button, or clone the repository to your machine using Git.
+[Download](https://github.com/Apress/cpp20-for-lazy-programmers/archive/master.zip) the files as a zip, or clone the repository to your machine using Git.
 
 ## Releases
 
