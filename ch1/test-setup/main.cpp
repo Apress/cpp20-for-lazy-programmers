@@ -10,7 +10,7 @@ int main(int argc, char** argv)
     SSDL_SetWindowSize  (500, 375);
 
     // Load and play music
-    SSDL_Music music = SSDL_LoadMUS ("Media/457729__razor5__boss-battle-2-0.wav");
+    SSDL_Music music = SSDL_LoadMUS ("media/457729__razor5__boss-battle-2-0.wav");
     SSDL_VolumeMusic    (int (MIX_MAX_VOLUME*0.50)); 
     SSDL_PlayMusic      (music, SSDL_FOREVER);        
 
