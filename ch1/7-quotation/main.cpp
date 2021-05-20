@@ -20,7 +20,7 @@ int main (int argc, char** argv)
     sout << "from The Lady of the Lake\n";
     sout << "\tby Sir Walter Scott\n\n";		
     // Tab over for author's name, then
-    //  double space at the end of the line
+    //  double new line at the end of the line
 
     sout << "\"Tis merry, 'tis merry, in Fairy-land,\n";
     sout << "\tWhen fairy birds are singing,\n"; 
