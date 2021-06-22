@@ -59,10 +59,10 @@ clean:
 	rm -r -f Debug Release .vs Backup	
 
 $(C_OBJECTS): %.o : 	%.c
-	g++ -c $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $< -o $@
+	g++ -g -c $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $< -o $@
 
 $(CC_OBJECTS): %.o : 	%.cc
-	g++ -c $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $< -o $@
+	g++ -g -c $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $< -o $@
 
 $(CPP_OBJECTS): %.o : 	%.cpp
-	g++ -c $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $< -o $@
+	g++ -g -c $(INCLUDE_FLAGS) $(LANGUAGE_FLAGS) $< -o $@

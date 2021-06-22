@@ -29,7 +29,12 @@ int main(int argc, char** argv)
 
     if (!sdlRenderer) return -1;    // nope, it failed
 
-    SDL_ClearError();               // Initially, no errors
+   //Some distros Unix, sometimes, don't start with a blank screen. Make them
+    SDL_SetRenderDrawColor(sdlRenderer, 0, 0, 0, 255); 
+    SDL_RenderClear       (sdlRenderer); 
+    SDL_RenderPresent     (sdlRenderer);
+
+   SDL_ClearError();               // Initially, no errors
 
     static constexpr int IMG_FLAGS  // all available types
         = IMG_INIT_PNG | IMG_INIT_JPG | IMG_INIT_TIF;

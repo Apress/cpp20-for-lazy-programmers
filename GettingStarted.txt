@@ -6,8 +6,26 @@ SSDL is built into this repository. No installation is needed.
 
 -========= Installation of SDL2 and other helper libraries===============
 
-Unix: In C++20 for Lazy Programmers, see Chapter 1 and Appendix A.
 Visual Studio and MinGW: No installation is needed.
+
+Unix: In C++20 for Lazy Programmers, see Chapter 1 and Appendix A.
+
+Note to Unix users (but probably not those using Ubuntu, Fedora/RedHat, 
+OpenSuSe, and Manjaro): if the test program says it can't find fonts, see 
+external/SSDL/src/SSDL_display.cpp, look for the comment 
+"If none of these font paths work..." and do what it says.
+
+Note for Manjaro users: the implementation of Microsoft Core Fonts for 
+the Web I used, via this command (YMMV):   pamac build ttf-ms-fonts
+...puts capitalization in some but not all the filenames. This is 
+inconsistent with other versions of Unix.  Rather than make a special 
+library just for Manjaro (!), I renamed all used fonts, eliminating capital
+letters -- especially
+Arial.TTF   -> arial.ttf
+Comic.TTF   -> comic.ttf
+Georgiab.TTF-> georgiab.ttf
+Timesbd.TTF -> timesbd.ttf
+Verdana.TTF -> verdana.ttf
 
 ========== How to use example SSDL programs ====================
 

@@ -24,7 +24,7 @@ INCLUDE_FLAGS	= `sdl2-config --cflags` \
 LANGUAGE_FLAGS	= -std=gnu++2a	#Specify language standard: C++20
 
         #Tell g++ where to find library files for SDL2, SSDL
-LIBRARIES	= SDL2main SDL2 SDL2_image SDL2_ttf SDL2_mixer
+LIBRARIES	= SDL2 SDL2_image SDL2_ttf SDL2_mixer
 LIBRARY_DIRS	= ../../external/SSDL/unix
 LIB_FLAGS	= $(foreach library,$(LIBRARIES),    -l$(library))
 LIB_DIR_FLAGS   = $(foreach libdir, $(LIBRARY_DIRS), -L$(libdir))

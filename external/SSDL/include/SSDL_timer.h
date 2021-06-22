@@ -31,9 +31,11 @@ bool SSDL_IsQuitMessage(); //updates screen, polls events, verifies there's no (
 inline void SSDL_Delay (Uint32 milliseconds) 
 { 
 	if (SSDL_IsQuitMessage ()) return; //Hitting Esc or killing window will
-									   // skip the delay to come.  Won't interrupt
-									   // the delay if it's already going.  Fixable?
-	SSDL_RenderPresent (); SDL_Delay (milliseconds); 
+	                                   // skip the delay to come.  Won't interrupt
+					   // the delay if it's already going.  Fixable?
+	SSDL_RenderPresent ();   //Be sure SSDL_IsQuitMessage doesn't call RenderPresent:
+	                         //redundant calls invalidate the screen buffer
+	SDL_Delay (milliseconds); 
 } 
 
 

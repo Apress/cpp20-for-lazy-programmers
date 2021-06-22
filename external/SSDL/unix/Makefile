@@ -47,11 +47,11 @@ static-test:	testSSDL.o libssdl.a
 	g++ `sdl2-config --cflags --libs` testSSDL.o -lssdl -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -L. -o static-test
 #	g++ `sdl2-config --cflags --libs` testSSDL.o -Wl,--start-group -lssdl -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -Wl,--end-group -L. -o static-test
 shared-test:	testSSDL.o libssdl.so  
-	g++ `sdl2-config --cflags --libs` testSSDL.o -lssdl -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -L. -o shared-test
+	g++ -g `sdl2-config --cflags --libs` testSSDL.o -lssdl -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -L. -o shared-test
 #	g++ `sdl2-config --cflags --libs` testSSDL.o -Wl,--start-group -lssdl -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf -Wl,--end-group -L. -o shared-test
 				
 testSSDL.o:					 ../test/testSSDL.cpp
-	g++ -c  $(INCLUDE_FLAGS) ../test/testSSDL.cpp      -o testSSDL.o
+	g++ -g -c  $(INCLUDE_FLAGS) ../test/testSSDL.cpp      -o testSSDL.o
 
 libssdl.a:	static			$(STATIC_OBJS)
 	ar rcs libssdl.a 		$(STATIC_OBJS)

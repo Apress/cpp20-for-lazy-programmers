@@ -18,7 +18,7 @@ zlib, by Jean-loup Gailly and Mark Adler
 
 To use with Microsoft Visual Studio, compile the SSDL project if needed, and ensure that <SSDL folder>/include is in your project's include path, and that <SSDL folder>/lib/<architecture> is in your project's library path.  There is no dll.
 
-To use with MinGW, build SSDL with the associated Makefile, and when compiling ensure that <SSDL folder>/include is in your include path and <SSDL folder>/MinGW is in the library path.
+To use with MinGW (or MSys), build SSDL with the associated Makefile, and when compiling ensure that <SSDL folder>/include is in your include path and <SSDL folder>/MinGW (or <SSDL folder>/MSys) is in the library path.
 
 To use with Unix, build SSDL with the associated Makefile, and when compiling ensure that <SSDL folder>/include is in your include path and <SSDL folder>/unix is in the library path.
 

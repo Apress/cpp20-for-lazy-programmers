@@ -72,7 +72,12 @@ bool SSDL_Timer::sync()
 bool SSDL_IsQuitMessage ()
 {
 	SSDL_DefaultEventHandler ();
-	return ! SSDL_IsNextFrame ();
+	return SSDL_Display::Instance().isTimeToQuit(); //! SSDL_IsNextFrame ();
+	//Line above changed 6-21-2021, because otherwise we get a redundant call to
+	// SDL_RenderPresent when this is called from SSDL_Delay. It doesn't seem to be
+	// called from anywhere else in the library, though a user program could call it
+	//Next version: eliminate this function -- it's not needed elsewhere
+	//Can't do it right now because it's in the list of provided functions in C++20 for Lazy
 }
 
 void SSDL_SetFramesPerSecond (Uint32 FPS){	SSDL_Timer::Instance().setFramesPerSecond (FPS); }
