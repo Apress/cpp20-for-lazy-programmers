@@ -8,6 +8,13 @@ Change **double space at the end of the line** to **double new line at the end o
 
 ***
 
+On **page 203** [Unusual behavior on some Unix distributions]:
+ 
+The stars are almost-invisible dots ->
+The stars are almost-invisible, or invisible, dots
+
+***
+
 On **page 400** [Unusual language feature]:
  
 Just before Antibugging, add: **It doesn't usually happen, but sometimes the compiler can't figure from the types of the arguments what T is. If that happens, you can specify: mySwap<float> (m, n). **.
