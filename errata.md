@@ -32,6 +32,12 @@ On **page 507** [More instructions needed]:
 Append to Exercise 2: **You may need to write typename before List<T>::iterator (as in: typename List<T>::iterator), and specify T when you call the function (as in reverse<int>) -- see Chapter 20, Function templates.**.
  
 Append to Exercise 5: **You may need to write typename before List<T>::iterator (as in: typename List<T>::iterator), and specify T when you call the function (as in reverse<int>) -- see Chapter 20, Function templates.**.
+ 
+***
+ 
+ On **page 643*** [Typo]:
+
+For \u<8 digits>, read \U<8 digits> .
 
 ***
 
