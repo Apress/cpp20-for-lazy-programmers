@@ -15,6 +15,12 @@ The stars are almost-invisible, or invisible, dots
 
 ***
 
+On **page 315** [Typo]
+
+int* A = new myArray[size]; -> int* A = new int[size];
+
+***
+
 On **page 400** [Unusual language feature]:
  
 Just before Antibugging, add: **It doesn't usually happen, but sometimes the compiler can't figure from the types of the arguments what T is. If that happens, you can specify: mySwap<float> (m, n). **.
