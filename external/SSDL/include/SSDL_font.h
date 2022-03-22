@@ -25,6 +25,7 @@
 #define SSDL_FONT_H
 
 #include <memory>
+#include <string>
 #include <SDL_ttf.h>
 
 //Because TTF_Font* must be destructed by TTF_CloseFont... and because shared_ptr
