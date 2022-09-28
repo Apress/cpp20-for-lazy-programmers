@@ -8,6 +8,10 @@ Change **double space at the end of the line** to **double new line at the end o
 
 ***
 
+On **page 118** [Typo]
+
+Change **sout << ' ';** to **sout << count << ' ';**.
+
 On **page 203** [Unusual behavior on some Unix distributions]:
  
 The stars are almost-invisible dots ->
