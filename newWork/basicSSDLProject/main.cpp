@@ -5,6 +5,6 @@
 int main(int argc, char** argv)
 {
 
-   SSDL_WaitKey(); //Wait for user to hit a key
-   return 0;
+    SSDL_WaitKey(); //Wait for user to hit a key
+    return 0;
 }
