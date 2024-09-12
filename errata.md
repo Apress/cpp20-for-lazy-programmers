@@ -8,6 +8,18 @@ Change **double space at the end of the line** to **double new line at the end o
 
 ***
 
+On **pages 83, 84** [Typo]:
+
+Change **SSDL_GetScreenWidth** to **SSDL_GetWindowWidth**, and **SSDL_GetScreenHeight** to **SSDL_GetWindowHeight**.
+
+***
+
+On **page 112** [Typo]:
+
+Change **zero time** to **zero times**.
+
+***
+
 On **page 118** [Typo]
 
 Change **sout << ' ';** to **sout << count << ' ';**.
