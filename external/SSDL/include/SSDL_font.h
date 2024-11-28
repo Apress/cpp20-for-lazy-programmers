@@ -27,6 +27,7 @@
 #include <memory>
 #include <string>
 #include <SDL_ttf.h>
+#include <string>
 
 //Because TTF_Font* must be destructed by TTF_CloseFont... and because shared_ptr
 // instead calls a dtor... and TTF_Font won't allow inheritance from it...
